@@ -3,10 +3,6 @@
  -->    <img align="middle" src="https://profile-counter.glitch.me/BAN-ALL/count.svg" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=F70000&lines=ωσяℓ∂+ℓαяgεsт+αη∂+ғαsтεsт+BANALLBOT;ηεvεя+εxιsтε∂+ιη+тнιs+ωσяℓ∂.;+𝐒aif𝐁an𝐀ll𝐁ot+🥀+%E2%9D%A4%EF%B8%8F">
-  
-
 
 
   
