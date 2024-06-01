@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from telethon import __version__ as tel
 from datetime import datetime
 from var import Var
-from SAIFBANALL.saifban import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
+from SAIFBANALL import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
 from time import sleep
 from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl import functions
@@ -65,7 +65,7 @@ for x in Var.SUDO:
 
 @Saif.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••sᴜᴘᴘᴏʀᴛ••", "https://t.me/STRANGERXWORLD"), Button.url("••ᴜᴘᴅᴀᴛᴇs••", "https://t.me/SHIVANSH474"), Button.url("••ʀᴇᴘᴏ••", f'{repo}')]
+    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("Oᴡɴᴇʀ", "https://t.me/SAIF_DICTATOR"), Button.url("Rᴇᴘᴏ", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in SUDO_USERS:
         await Saif.send_file(
@@ -99,8 +99,8 @@ async def start(event):
 
 @Saif.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
-    Button.url("ʀᴇᴘᴏ", f'{repo}')]
+    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("Oᴡɴᴇʀ", "https://t.me/SAIF_DICTATOR"),
+    Button.url("Rᴇᴘᴏ", f'{repo}')]
     if event.sender.id in SUDO_USERS:
         await Saif.send_file(
             event.chat.id,
@@ -111,7 +111,7 @@ async def start(event):
         )
     if event.sender.id not in SUDO_USERS:
         await event.reply(
-            "ʜᴜʜ ɴɪɢɢᴀ!\ɴᴛʜɪs ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ ʟᴏʟ 😑\n\ɴᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ⚡](https://github.com/SAIFDEAD/BAN-ALL)",
+            "ᴀᴘɴᴇ ᴀᴜᴋᴋᴀᴛ ᴍᴇ ʀʜᴀ ᴋᴀʀᴏ ʙᴇᴡᴀᴋᴜғ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/SAIFDEAD/BAN-ALL)",
             link_preview=False,
         )       
 
@@ -123,7 +123,7 @@ async def ping(event):
         txxt = await event.reply(t)
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await txxt.edit(f"ʏᴇᴀн ɪ ᴀᴍ ᴀʟɪᴠᴇ 🔥!!\n\nᴘɪɴɢ ᴘᴏɴɢ 🏓\n   ➥ `{ms} ms`")
+        await txxt.edit(f"ɪ ᴀᴍ ᴀʟɪᴠᴇ ❣️\n\n \n   ➥ `{ms} ms`")
 
 @Saif.on(events.NewMessage(pattern="^/kickall"))
 async def kickall(event):
