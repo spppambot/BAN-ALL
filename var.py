@@ -18,4 +18,4 @@ class Var:
     sudo = os.getenv("SUDO")
     SUDO = []
     if sudo:
-        SUDO = make_int(sudo)
+        SUDO = make_int(sudo) 
