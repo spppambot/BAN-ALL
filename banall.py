@@ -64,7 +64,6 @@ for x in Var.SUDO:
 @Saif.on(events.NewMessage(pattern="^/start"))
 async def start(event):
     buttns = [Button.url("••sᴜᴘᴘᴏʀᴛ••", "https://t.me/SAIFALLBOT"), Button.url("••ᴜᴘᴅᴀᴛᴇs••", "https://t.me/SAIF_DICTATOR"), Button.url("••ʀᴇᴘᴏ••", f'{repo}')]
-    py = platform.python_version()
     if event.sender.id in Saif:
         await sree.send_file(
             event.chat.id,
@@ -99,7 +98,6 @@ async def start(event):
 async def start(event):
     buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
     Button.url("ʀᴇᴘᴏ", f'{repo}')]
-    py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
