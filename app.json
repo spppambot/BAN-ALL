@@ -1,0 +1,35 @@
+{
+   "name": "BANALL-BOT",
+   "description": "TELEGRAM BOT",
+   "repository": "https://github.com/SAIFDEAD/BAN-ALL",
+   "logo": "https://graph.org/file/507f06908daf43adf4bde.jpg",
+   "image": "heroku/pthon",
+   "env": {
+      "API_ID": {
+        "description": "FILL API ID TAKE FROM TELEGRAM.ORG",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "API HASH TAKE FROM My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "YOUR BOT TOKEN TAKE FROM @BOTFATHER",
+        "value": "",
+        "required": true
+      },      
+      "SUDO": {
+            "description": "SUDO USER FILL SPACE BY SPACE",
+            "value": "",
+            "required": true  
+      }
+   },
+   "formation": {
+            "worker": {
+                "quantity": 1,
+                "size": "eco"
+            }
+        }
+  }
