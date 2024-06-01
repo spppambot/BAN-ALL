@@ -65,7 +65,7 @@ for x in Var.SUDO:
 async def start(event):
     buttns = [Button.url("••sᴜᴘᴘᴏʀᴛ••", "https://t.me/SAIFALLBOT"), Button.url("••ᴜᴘᴅᴀᴛᴇs••", "https://t.me/SAIF_DICTATOR"), Button.url("••ʀᴇᴘᴏ••", f'{repo}')]
     if event.sender.id in SUDO_USERS:
-        await sree.send_file(
+        await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/1d11deb9c55d1301e9cae.jpg",
             caption=SAISTART.format(
@@ -79,7 +79,7 @@ async def start(event):
             buttons=buttns
         )
     if event.sender.id not in SUDO_USERS:
-        await sree.send_file(
+        await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/507f06908daf43adf4bde.jpg",
             caption=SSTART.format(
@@ -99,7 +99,7 @@ async def start(event):
     buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
     Button.url("ʀᴇᴘᴏ", f'{repo}')]
     if event.sender.id in SUDO_USERS:
-        await sree.send_file(
+        await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/507f06908daf43adf4bde.jpg",
             caption=SAIHELP.format(event.sender.first_name, event.sender.id),
