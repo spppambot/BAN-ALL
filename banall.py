@@ -64,7 +64,7 @@ for x in Var.SUDO:
 @Saif.on(events.NewMessage(pattern="^/start"))
 async def start(event):
     buttns = [Button.url("••sᴜᴘᴘᴏʀᴛ••", "https://t.me/SAIFALLBOT"), Button.url("••ᴜᴘᴅᴀᴛᴇs••", "https://t.me/SAIF_DICTATOR"), Button.url("••ʀᴇᴘᴏ••", f'{repo}')]
-    if event.sender.id in Saif:
+    if event.sender.id in SUDO_USERS:
         await sree.send_file(
             event.chat.id,
             file="https://graph.org/file/1d11deb9c55d1301e9cae.jpg",
@@ -78,7 +78,7 @@ async def start(event):
             link_preview=False,
             buttons=buttns
         )
-    if event.sender.id not in Saif:
+    if event.sender.id not in SUDO_USERS:
         await sree.send_file(
             event.chat.id,
             file="https://graph.org/file/507f06908daf43adf4bde.jpg",
@@ -98,7 +98,7 @@ async def start(event):
 async def start(event):
     buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
     Button.url("ʀᴇᴘᴏ", f'{repo}')]
-    if event.sender.id in OP:
+    if event.sender.id in SUDO_USERS:
         await sree.send_file(
             event.chat.id,
             file="https://graph.org/file/507f06908daf43adf4bde.jpg",
@@ -106,7 +106,7 @@ async def start(event):
             link_preview=False,
             buttons=buttns
         )
-    if event.sender.id not in Saif:
+    if event.sender.id not in SUDO_USERS:
         await event.reply(
             "ʜᴜʜ ɴɪɢɢᴀ!\ɴᴛʜɪs ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ ʟᴏʟ 😑\n\ɴᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ⚡](https://github.com/SAIFDEAD/BAN-ALL)",
             link_preview=False,
@@ -114,7 +114,7 @@ async def start(event):
 
 @Saif.on(events.NewMessage(pattern="^/ping"))
 async def ping(event):
-    if event.sender.id in Saif:
+    if event.sender.id in SUDO_USERS:
         start = datetime.now()
         t = "Pinging..."
         txxt = await event.reply(t)
