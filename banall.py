@@ -68,7 +68,7 @@ async def start(event):
         await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/1d11deb9c55d1301e9cae.jpg",
-            caption=SAISTART.format(event.sender.first_name, event.sender.id),
+            caption=SAISTART,
             link_preview=False,
             buttons=buttns
         )
