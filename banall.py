@@ -16,7 +16,7 @@ from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatA
 from telethon.tl.functions.channels import EditBannedRequest
 from datetime import datetime
 from var import Var
-from SAIFBANALL import SAISTART, SAIHELP, SSTART
+from SAIFBANALL import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
 from time import sleep
 from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl import functions
