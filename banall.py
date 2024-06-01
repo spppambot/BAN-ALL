@@ -68,13 +68,7 @@ async def start(event):
         await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/1d11deb9c55d1301e9cae.jpg",
-            caption=SAISTART.format(
-                event.sender.first_name,
-                event.sender.id,
-                py,
-                tel,
-                Owner,
-            ),
+            caption=SAISTART.format(event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
         )
@@ -82,17 +76,10 @@ async def start(event):
         await Saif.send_file(
             event.chat.id,
             file="https://graph.org/file/507f06908daf43adf4bde.jpg",
-            caption=SSTART.format(
-                event.sender.first_name,
-                event.sender.id,
-                py,
-                tel,
-                Owner,
-            ),
+            caption=SSTART.format( event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
         )
-
 
 @Saif.on(events.NewMessage(pattern="^/help"))
 async def start(event):
