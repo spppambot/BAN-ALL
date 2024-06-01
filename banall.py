@@ -16,7 +16,7 @@ from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatA
 from telethon.tl.functions.channels import EditBannedRequest
 from datetime import datetime
 from var import Var
-from SAIFBANALL.main import SAISTART, SAIHELP, 
+from SAIFBANALL.main import SAISTART, SAIHELP, SSTART
 from time import sleep
 from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl import functions
@@ -52,7 +52,7 @@ print("Starting.....")
 Saif = TelegramClient('Saif', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
 SAIF= [
-   "https://telegra.ph//file/93901ec36088ca936f133.jpg",
+   "https://telegra.ph//file/507f06908daf43adf4bde.jpg",
 ]
 
 SUDO_USERS = []
