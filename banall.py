@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from telethon import __version__ as tel
 from datetime import datetime
 from var import Var
-from SAIFBANALL import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
+from SAIFBANALL.saifban import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
 from time import sleep
 from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl import functions
