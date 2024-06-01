@@ -123,13 +123,13 @@ async def ping(event):
         txxt = await event.reply(t)
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await txxt.edit(f"ɪ ᴀᴍ ᴀʟɪᴠᴇ ❣️\n\n \n   ➥ `{ms} ms`")
+        await txxt.edit(f"ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ sᴘᴇᴇᴅ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴅɪᴄᴛᴀᴛᴏʀ](https://t.me/SAIF_DICTATOR)||")
 
 @Saif.on(events.NewMessage(pattern="^/kickall"))
 async def kickall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"𝙽𝚘𝚘𝚋 !! 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙲𝚖𝚍 𝚒𝚗 𝙶𝚛𝚘𝚞𝚙."
+         Reply = f"ɴᴏ ᴏɴʟʏ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ."
          await event.reply(Reply)
      else:
          await event.delete()
@@ -138,8 +138,8 @@ async def kickall(event):
          admin = SaiF.admin_rights
          creator = SaiF.creator
          if not admin and not creator:
-              return await event.reply("I Dɸƞ'τ հα⋎ε ៜυẜẜιϲιεƞτ Ɍιϑհτៜ !!")
-         DeaD = await Saif.send_message(event.chat_id, "**Ηεℓℓ𝙾 !! I'ʍ Δℓι⋎ε**")
+              return await event.reply("sᴏʀʀʏ !! ɪ ᴅᴏɴ'ᴛ ʜᴀɪ sᴜғғɪᴄɪᴇɴᴛ ʀɪɢʜᴛ ")
+         DeaD = await Saif.send_message(event.chat_id, "**ᴋɪʟʟɪɴɢ sᴛᴀʀᴛᴇᴅ !**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -154,14 +154,14 @@ async def kickall(event):
              except Exception as e:
                     print(str(e))
                     await asyncio.sleep(0.1)
-         await DeaD.edit(f"**Ʊៜεʀៜ ƘιϲΚεδ ⟆υϲϲεៜៜẜυℓℓψ ! \n\n ƘιϲΚεδ:** `{kimk}` \n **Total:** `{all}`")
+         await DeaD.edit(f"**ᴜsᴇʀ ᴋɪᴄᴋᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ! \n\n ᴋɪᴄᴋᴇᴅ:** `{kimk}` \n **ᴛᴏᴛᴀʟ:** `{all}`")
     
 
 @Saif.on(events.NewMessage(pattern="^/banall"))
 async def banall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"Noob !! Use This Cmd in Group."
+         Reply = f"ɴᴏ !! ᴜsᴇ ᴛʜɪs ᴄᴍᴅ ɪɴ ɢʀᴏᴜᴘ."
          await event.reply(Reply)
      else:
          await event.delete()
@@ -170,8 +170,8 @@ async def banall(event):
          admin = SaiF.admin_rights
          creator = SaiF.creator
          if not admin and not creator:
-              return await event.reply("I Dɸƞ'τ հα⋎ε ៜυẜẜιϲιεƞτ Ɍιϑհτៜ !!")
-         DeaD = await Saif.send_message(event.chat_id, "**Ηεℓℓɸ !! I'ʍ Δℓι⋎ε**")
+              return await event.reply("ɪ ᴅᴏɴ'ᴛ ʜᴀɪ sᴜғғɪᴄɪᴇɴᴛ ʀɪɢʜᴛ !!")
+         DeaD = await Saif.send_message(event.chat_id, "**ᴡᴀᴛᴄʜ ᴍᴀɢɪᴄ ᴍᴀsᴛᴇʀ**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -186,13 +186,13 @@ async def banall(event):
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.1)
-         await Dead.edit(f"**Ʊៜεʀៜ Βαƞƞεδ ៜυϲϲεៜẜυℓℓ𝚢 ! \n\n Yzmmvw Users:** `{bann}` \n **Total Users:** `{all}`")
+         await Dead.edit(f"**ᴜsᴇʀ ʙᴀɴɴᴇᴅ sᴜᴄᴄᴇsғᴜʟʟʏ  ! \n\n ʙᴀɴɴᴇᴅ ᴜsᴇʀs:** `{bann}` \n **ᴛᴏᴛᴀʟ ᴜsᴇʀs:** `{all}`")
 
 @Saif.on(events.NewMessage(pattern="^/unbanall"))
 async def unban(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"𝙽𝚘𝚘𝚋 !! Ʊៜε Ƭнιƨ Ɔм∂ ιи Ǥяσʋρ."
+         Reply = f"ɴᴏ !! ᴜsᴇ ᴛʜɪs ᴄᴍᴅ ɪɴ ɢʀᴏᴜᴘ."
          await event.reply(Reply)
      else:
          msg = await event.reply("sᴇᴀʀᴄʜɪɴɢ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ʟɪsᴛs.")
@@ -202,13 +202,13 @@ async def unban(event):
               try:
                 await event.client(functions.channels.EditBannedRequest(event.chat_id, i, rights))
               except FloodWaitError as ex:
-                 print(f"sleeping for {ex.seconds} seconds")
+                 print(f"sʟᴇᴇᴘɪɴɢ ғᴏʀ {ex.seconds} sᴇᴄᴏɴᴅs")
                  sleep(ex.seconds)
               except Exception as ex:
                  await msg.edit(str(ex))
               else:
                   p += 1
-         await msg.edit("{}: {} unbanned".format(event.chat_id, p))
+         await msg.edit("{}: {} ᴜɴʙᴀɴɴᴇᴅ".format(event.chat_id, p))
 
 
 @Saif.on(events.NewMessage(pattern="^/leave"))
@@ -250,6 +250,6 @@ async def restart(e):
 
 
 print("\n\n")
-print("ʏᴏᴜʀ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴅᴇᴘʟᴏʏᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✅ ᴍᴀᴅᴇ ʙʏ sᴀɪғ ᴘᴀᴘᴀ")
+print("ʏᴏᴜʀ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴅᴇᴘʟᴏʏᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✅ ᴍᴀᴅᴇ ʙʏ sᴀɪғᴅᴇᴀᴅ ")
 
 Saif.run_until_disconnected()
