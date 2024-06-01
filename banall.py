@@ -133,7 +133,7 @@ async def banall(event):
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"**Ʊៜεʀៜ Βαƞƞεδ ៜυϲϲεៜẜυℓℓ𝚢 ! \n\n Yzmmvw Users:** `{bann}` \n **Total Users:** `{all}`")
+         await Dead.edit(f"**Ʊៜεʀៜ Βαƞƞεδ ៜυϲϲεៜẜυℓℓ𝚢 ! \n\n Yzmmvw Users:** `{bann}` \n **Total Users:** `{all}`")
 
 print("\n\n")
 print("ʏᴏᴜʀ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴅᴇᴘʟᴏʏᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✅ ᴍᴀᴅᴇ ʙʏ sᴀɪғ ᴘᴀᴘᴀ")
