@@ -123,6 +123,17 @@ async def banall(event):
          admins_id = [i.id for i in admins]
          all = 0
          bann = 0
+         async for user in event.client.iter_participants(event.chat_id):
+             all += 1
+             try:
+               if user.id not in admins_id:
+                    await event.client(EditBannedRequest(event.chat_id, user.id, RIGHTS))
+                    bann += 1
+                    await asyncio.sleep(0.1)
+             except Exception as e:
+                   print(str(e))
+                   await asyncio.sleep(0.1)
+         await RiZoeL.edit(f"**Ʊៜεʀៜ Βαƞƞεδ ៜυϲϲεៜẜυℓℓ𝚢 ! \n\n Yzmmvw Users:** `{bann}` \n **Total Users:** `{all}`")
 
 print("\n\n")
 print("ʏᴏᴜʀ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴅᴇᴘʟᴏʏᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✅ ᴍᴀᴅᴇ ʙʏ sᴀɪғ ᴘᴀᴘᴀ")
