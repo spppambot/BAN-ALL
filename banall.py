@@ -72,15 +72,6 @@ async def start(event):
             link_preview=False,
             buttons=buttns
         )
-    if event.sender.id not in SUDO_USERS:
-        await Saif.send_file(
-            event.chat.id,
-            file="https://graph.org/file/507f06908daf43adf4bde.jpg",
-            caption=SSTART.format( event.sender.first_name, event.sender.id),
-            link_preview=False,
-            buttons=buttns
-        )
-
 @Saif.on(events.NewMessage(pattern="^/help"))
 async def start(event):
     buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
