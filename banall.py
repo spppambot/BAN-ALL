@@ -55,23 +55,74 @@ SAIF= [
    "https://telegra.ph//file/507f06908daf43adf4bde.jpg",
 ]
 
+repo = "https://github.com/SAIFDEAD/BAN-ALL"
+
 SUDO_USERS = []
 for x in Var.SUDO: 
     SUDO_USERS.append(x)
 
-@Saif.on(events.NewMessage(pattern="^/ping"))  
-async def ping(e):
+@Saif.on(events.NewMessage(pattern="^/start"))
+async def start(event):
+    buttns = [Button.url("••sᴜᴘᴘᴏʀᴛ••", "https://t.me/SAIFALLBOT"), Button.url("••ᴜᴘᴅᴀᴛᴇs••", "https://t.me/SAIF_DICTATOR"), Button.url("••ʀᴇᴘᴏ••", f'{repo}')]
+    py = platform.python_version()
+    if event.sender.id in Saif:
+        await sree.send_file(
+            event.chat.id,
+            file="https://graph.org/file/1d11deb9c55d1301e9cae.jpg",
+            caption=SAISTART.format(
+                event.sender.first_name,
+                event.sender.id,
+                py,
+                tel,
+                Owner,
+            ),
+            link_preview=False,
+            buttons=buttns
+        )
+    if event.sender.id not in Saif:
+        await sree.send_file(
+            event.chat.id,
+            file="https://graph.org/file/507f06908daf43adf4bde.jpg",
+            caption=SSTART.format(
+                event.sender.first_name,
+                event.sender.id,
+                py,
+                tel,
+                Owner,
+            ),
+            link_preview=False,
+            buttons=buttns
+        )
+
+
+@Saif.on(events.NewMessage(pattern="^/help"))
+async def start(event):
+    buttns = [Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("", "https://t.me/SAIF_DICTATOR"),
+    Button.url("ʀᴇᴘᴏ", f'{repo}')]
+    py = platform.python_version()
+    if event.sender.id in OP:
+        await sree.send_file(
+            event.chat.id,
+            file="https://graph.org/file/507f06908daf43adf4bde.jpg",
+            caption=SAIHELP.format(event.sender.first_name, event.sender.id),
+            link_preview=False,
+            buttons=buttns
+        )
+    if event.sender.id not in Saif:
+        await event.reply(
+            "ʜᴜʜ ɴɪɢɢᴀ!\ɴᴛʜɪs ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ ʟᴏʟ 😑\n\ɴᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ⚡](https://github.com/SAIFDEAD/BAN-ALL)",
+            link_preview=False,
+        )       
+
+@Saif.on(events.NewMessage(pattern="^/ping"))
+async def ping(event):
+    if event.sender.id in Saif:
         start = datetime.now()
-        t = "ᴀɪ ʙᴏᴛ ᴀʟɪᴠɪɴɢ..."
-        txxt = await message.reply(t)
-        await asyncio.sleep(0.25)
-        await txxt.edit_text("ᴀɪ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ......")
-        await asyncio.sleep(0.35)
-        await txxt.delete()
+        t = "Pinging..."
+        txxt = await event.reply(t)
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await message.reply_photo(SAIF,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**sᴀɪғʙᴏʀᴢ ʙᴀɴ-ᴀʟʟ ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ sᴘᴇᴇᴅ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [sᴀɪғ](https://t.me/SAIF_DICTATOR)||")
+        await txxt.edit(f"ʏᴇᴀн ɪ ᴀᴍ ᴀʟɪᴠᴇ 🔥!!\n\nᴘɪɴɢ ᴘᴏɴɢ 🏓\n   ➥ `{ms} ms`")
 
 @Saif.on(events.NewMessage(pattern="^/kickall"))
 async def kickall(event):
