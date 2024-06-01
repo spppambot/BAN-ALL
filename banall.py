@@ -14,6 +14,7 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 from asyncio import sleep
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatAdminRights
 from telethon.tl.functions.channels import EditBannedRequest
+from telethon import __version__ as tel
 from datetime import datetime
 from var import Var
 from SAIFBANALL import dad as gg, dady as g, SAISTART, SAIHELP, SSTART
@@ -56,6 +57,7 @@ SAIF= [
 ]
 
 repo = "https://github.com/SAIFDEAD/BAN-ALL"
+Owner = "@SAIF_DICTATOR"
 
 SUDO_USERS = []
 for x in Var.SUDO: 
