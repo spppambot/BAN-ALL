@@ -56,8 +56,8 @@ SAIF= [
    "https://telegra.ph//file/507f06908daf43adf4bde.jpg",
 ]
 
-repo = "https://github.com/SAIFDEAD/BAN-ALL"
-Owner = "@SAIF_DICTATOR"
+repo = "https://github.com/djdjrjjrk"
+Owner = "@Sanatani_Sujoy"
 
 SUDO_USERS = []
 for x in Var.SUDO: 
@@ -65,7 +65,7 @@ for x in Var.SUDO:
 
 @Saif.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("Oᴡɴᴇʀ", "https://t.me/SAIF_DICTATOR"), Button.url("Rᴇᴘᴏ", f'{repo}')]
+    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SuperToppers0"), Button.url("Oᴡɴᴇʀ", "https://t.me/SAIF_DICTATOR"), Button.url("Rᴇᴘᴏ", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in SUDO_USERS:
         await Saif.send_file(
@@ -99,7 +99,7 @@ async def start(event):
 
 @Saif.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SAIFALLBOT"), Button.url("Oᴡɴᴇʀ", "https://t.me/SAIF_DICTATOR"),
+    buttns = [Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SuperToppers"), Button.url("Oᴡɴᴇʀ", "https://t.me/UncleChipssBot"),
     Button.url("Rᴇᴘᴏ", f'{repo}')]
     if event.sender.id in SUDO_USERS:
         await Saif.send_file(
@@ -111,7 +111,7 @@ async def start(event):
         )
     if event.sender.id not in SUDO_USERS:
         await event.reply(
-            "ᴀᴘɴᴇ ᴀᴜᴋᴋᴀᴛ ᴍᴇ ʀʜᴀ ᴋᴀʀᴏ ʙᴇᴡᴀᴋᴜғ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/SAIFDEAD/BAN-ALL)",
+            "ᴀᴘɴᴇ ᴀᴜᴋᴋᴀᴛ ᴍᴇ ʀʜᴀ ᴋᴀʀᴏ ʙᴇᴡᴀᴋᴜғ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ғʀᴏᴍ ᴛʜɪs [ʀᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/djudhejjr)",
             link_preview=False,
         )       
 
@@ -123,7 +123,7 @@ async def ping(event):
         txxt = await event.reply(t)
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await txxt.edit(f"ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ sᴘᴇᴇᴅ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴅɪᴄᴛᴀᴛᴏʀ](https://t.me/SAIF_DICTATOR)||")
+        await txxt.edit(f"ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ sᴘᴇᴇᴅ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴅɪᴄᴛᴀᴛᴏʀ](https://t.me/SuperToppers)||")
 
 @Saif.on(events.NewMessage(pattern="^/kickall"))
 async def kickall(event):
